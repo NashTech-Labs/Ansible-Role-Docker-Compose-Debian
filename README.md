@@ -1,6 +1,6 @@
 Ansible Role to install Docker with Docker Compose on a Debian Platform
 =========
-[![CI](https://github.com/geerlingguy/ansible-role-docker/workflows/CI/badge.svg?event=push)](https://github.com/geerlingguy/ansible-role-docker/actions?query=workflow%3ACI)
+![CI](https://github.com/knoldus/Ansible-Role-Docker-Compose-Debian/blob/main/CI-passing.svg)
 
 This template is an Ansible Role that installs Docker and Docker Compose  on Linux with Debian distros.
 
