@@ -1,5 +1,4 @@
 ---
-
 - include_tasks: dockerSetup.yml
 
 - name: Install Docker packages.

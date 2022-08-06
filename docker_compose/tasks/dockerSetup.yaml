@@ -9,12 +9,20 @@
       - runc
     state: absent
 
-- name: Ensure dependencies are installed.
-  apt:
-    name:
-      - apt-transport-https
-      - ca-certificates
-    state: present
+- name: install dependencies
+    apt:
+      name: "{{item}}"
+      state: present
+      update_cache: yes
+    loop:
+      - "apt-transport-https"
+      - "ca-certificates"
+      - "curl"
+      - "gnupg-agent"
+      - "software-properties-common"
+      - "python3-pip"
+      - "python3-setuptools"
+
 
 - name: Ensure additional dependencies are installed (on Ubuntu < 20.04 and any other systems).
   apt:
